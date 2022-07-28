@@ -8,7 +8,7 @@ doodleRouter.route('/')
     next();
 })
 .get((req, res) => {
-    res.end('Will add doodle to page.');
+    res.end('Will get doodle information and image.');
 })
 .post((req, res) => {
     res.end(`Will add the doodle: ${req.body.name} with description: ${req.body.description}, and the jpg file.`);
